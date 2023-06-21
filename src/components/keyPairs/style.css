@@ -1,0 +1,23 @@
+@media only screen and (max-width: 600px) {
+    .box {
+        min-width: 350px !important;
+    }
+}
+
+.line-input:active,
+.line-input:focus,
+.line-input:focus:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid black !important;
+}
+
+/* .line-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid black !important;
+} */
+
+.line-input {
+    transition: 0.5s ease-in-out;
+}

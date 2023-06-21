@@ -1,0 +1,47 @@
+// .optionListContainer {
+//     color: black;
+//     border-radius: 4px;
+//     margin-top: 1px;
+//     width: 100%;
+
+//     position: relative;
+//     z-index: 0;
+// }
+.optionListContainer {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    width: 43%;
+    position: fixed;
+    height: max-content;
+    z-index: 100;
+    max-height: 8rem;
+}
+.optionContainer {
+    min-height: 80px;
+    max-height: 100px;
+    overflow-x: hidden;
+}
+.multiSelectContainer li {
+    height: auto;
+    padding-left: 8px;
+}
+option {
+    display: flex;
+}
+.checkbox {
+    align-content: start;
+    opacity: 1 !important;
+    padding: 0;
+    width: 40px;
+}
+.highlightOption {
+    background-color: transparent;
+    color: black;
+}
+.search-wrapper,
+.searchWrapper {
+    width: 100%;
+    padding: 0.175rem 0.35rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}

@@ -1,0 +1,153 @@
+// .modalBackground {
+//     width: 100%;
+//     height: 100%;
+//     margin-left: -10px;
+
+//     background-color: rgba(0, 0, 0, 0.5);
+//     //opacity: 0.6;
+//     position: fixed;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: -80px;
+//     z-index: 200;
+// }
+
+// .modalContainer {
+//     width: 45%;
+//     height: 80%;
+//     z-index: 100;
+
+//     background-color: white;
+//     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+//     display: flex;
+//     flex-direction: column;
+//     padding: 25px;
+
+//     margin-top: -80px;
+// }
+.modalBackground {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    margin-top: -315px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer {
+    width: 48%;
+    height: 85%;
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+    position: fixed;
+}
+
+h5 {
+    padding-top: 14px;
+    padding-bottom: -5px;
+    margin-left: -425px;
+}
+.closebtn {
+    margin-left: 20%;
+    margin-top: -12%;
+    margin-bottom: -40px;
+    background-color: transparent;
+    border: none;
+    color: rgb(180, 177, 177);
+    font-weight: 10px;
+}
+
+.ycolor {
+    color: #ff0000;
+}
+.fcolor {
+    color: #3b5998;
+}
+.icolor {
+    color: rgb(88, 81, 219);
+}
+.tcolor {
+    color: #00acee;
+}
+.lcolor {
+    color: #0a66c2;
+}
+.scolor {
+    color: #1db954;
+}
+img {
+    width: 25px;
+    height: 25px;
+}
+.modalContainer .title {
+    display: flex;
+    text-align: left;
+    margin-top: -28px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -8px;
+
+    border-bottom: 1px solid rgb(222, 220, 220);
+}
+
+// .titleCloseBtn button {
+//     background-color: transparent;
+//     border: none;
+//     font-size: 20px;
+//     margin-top: -15px;
+//     cursor: pointer;
+// }
+
+.modalContainer .body {
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 23px;
+    margin-left: 5px;
+    width: 90%;
+    position: absolute;
+}
+
+.modalContainer .footer {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@media screen and (max-width: 580px) {
+    .modalContainer {
+        width: 95%;
+        padding: 0;
+    }
+
+    h5 {
+        padding-top: 29px;
+
+        margin-left: -5px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .modalContainer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modalContainer {
+        width: 60%;
+    }
+}

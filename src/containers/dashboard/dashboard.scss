@@ -1,0 +1,116 @@
+.main1 {
+    // margin-left: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 1190px;
+    z-index: 4000;
+    position: absolute;
+    margin-top: 320px;
+}
+.insidemain {
+    padding-left: 20px;
+
+    background-color: transparent;
+}
+.btn2 {
+    background-color: rgb(246, 241, 241);
+    border: solid 1px black;
+    text-decoration-color: white;
+    border-radius: 12px;
+    color: rgb(6, 6, 6);
+}
+.ybt {
+    background-color: #ff0000;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+
+.fbt {
+    background-color: #3b5998;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+.ibt {
+    background-color: rgb(88, 81, 219);
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+.tbt {
+    background-color: #00acee;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+.lbt {
+    background-color: #0a66c2;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+.sbt {
+    background-color: #1db954;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+
+.tikbt {
+    background-color: #0d0d0d;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+.iframe {
+    width: 100%;
+}
+@media screen and (max-width: 1100px) {
+    .main1 {
+        margin-left: 1000px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .main1 {
+        margin-left: 1000px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main1 {
+        margin-left: 700px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main1 {
+        // margin-left: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+
+        z-index: 4000;
+        position: absolute;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main1 {
+        margin-left: 700px;
+    }
+}
+.iconcs {
+    margin-top: 5px;
+}

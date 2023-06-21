@@ -1,0 +1,141 @@
+.btn2 {
+    background-color: rgb(246, 241, 241);
+    border: solid 1px black;
+    text-decoration-color: white;
+    border-radius: 12px;
+    color: rgb(6, 6, 6);
+}
+.ybtn {
+    background-color: #ff0000;
+    width: 80%;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-radius: 12px;
+    color: white;
+}
+
+.fbtn {
+    background-color: #3b5998;
+    width: 80%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+.ibtn {
+    background-color: rgb(88, 81, 219);
+    width: 80%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+.tbtn {
+    background-color: #00acee;
+    width: 80%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+.lbtn {
+    background-color: #0a66c2;
+    width: 80%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+.sbtn {
+    background-color: #1db954;
+    width: 80%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 12px;
+    color: white;
+    border: none;
+}
+
+.tikbtn {
+    background-color: #0d0d0d;
+    width: 80%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 12px;
+    border: none;
+    color: white;
+}
+.sbtn,
+.lbtn,
+.tbtn,
+.ibtn,
+.fbtn,
+.tikbtn,
+.ybtn:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+a {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main {
+    // margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white !important;
+}
+.innerdiv {
+    padding-top: 20px;
+    display: flex;
+    width: 33%;
+    padding-left: 20px;
+    height: 90px;
+    background-color: white;
+}
+.title {
+    background-color: white;
+    font-size: medium;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.acticon {
+    margin-left: -50px;
+    margin-right: 40px;
+}
+.txtlbl {
+    font-size: larger;
+    padding-left: 3px;
+    font-weight: bold;
+}
+.iconsize {
+    font-size: 1.8rem;
+}
+@media screen and (max-width: 600px) {
+    .acticon {
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+    .txtlbl {
+        font-size: medium;
+    }
+    .iconsize {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .acticon {
+        margin-left: -3px;
+        margin-right: 3px;
+    }
+}
