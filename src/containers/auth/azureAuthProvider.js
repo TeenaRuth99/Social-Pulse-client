@@ -35,6 +35,6 @@ export const getAuthProvider = () => {
         loginType: LoginType.Redirect,
         // tokenRefreshUri: window.location.origin + '/auth.html',
     };
-
+     console.log(config);
     return new MsalAuthProvider(config, authenticationParameters, options);
 };
