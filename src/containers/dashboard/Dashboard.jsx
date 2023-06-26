@@ -100,7 +100,7 @@ function QuickSightEmbed() {
                                         <div
                                             onClick={() => {
                                                 setUrl(
-                                                    'https://us-east-1.quicksight.aws.amazon.com/sn/embed/share/accounts/919490798061/dashboards/6e0c20c8-0b83-47c2-bec7-460fa7507004?directory_alias=nv-agilisium',
+                                                    'https://us-west-2.quicksight.aws.amazon.com/sn/accounts/919490798061/dashboards/bc3e3846-f2f5-49cd-8632-f4fac0f0df19?directory_alias=nv-agilisium',
                                                 );
                                             }}
                                             className={
