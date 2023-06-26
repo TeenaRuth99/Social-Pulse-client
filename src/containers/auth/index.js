@@ -3,7 +3,7 @@ import { toastr } from 'react-redux-toastr';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { RouteKeys } from '../routes/route-keys';
 import Styles from './authPage.module.scss';
-
+import SPlogo from "../../assets/logo/SP.png";
 /**
  * A component that handles authentication intial page
  * @returns {JSX.Element}
@@ -259,14 +259,14 @@ export default function AuthPage() {
                         stroke="#606161"
                         stroke-width="0.2"
                     />
-                </svg> */}
+                </svg> 
                 <h2>
                     <span className="fw-bolder " id="brandpre">
                         Social
                     </span>
                     <span className="fw-bolder">Pulse</span>
-                </h2>
-
+                </h2>*/}
+<img src={SPlogo} alt="none" className={Styles["img"]}></img>
                 <span className={Styles['bsk-container']}>
                     <button
                         className="bsk-btn bsk-btn-default"
