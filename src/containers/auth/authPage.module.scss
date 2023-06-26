@@ -114,16 +114,22 @@
     gap: 12px;
     font-size: 15px;
     align-items: center;
-    background: #0068b8;
+    background: #070707;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
     padding: 12px;
     color: #fff;
-    margin-top: 25px;
+    margin-top: -40px;
     border: none;
     border-radius: 6px;
+    z-index: 100;
   }
   object {
     width: 25px;
     height: 25px;
   }
+}
+.img {
+  width: 370px !important;
+  height: 320px !important;
+  margin-top: -50px;
 }
