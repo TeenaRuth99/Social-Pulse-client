@@ -16,17 +16,18 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import "./dashboard.scss";
+import { checkPropTypes } from "prop-types";
 
 function QuickSightEmbed() {
   const { checktype } = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [urls, setUrl] = useState("");
+  const [check, setcheck] = useState("");
 
   const { setsrc, src } = useGlobalContext();
   const request = {
-    resource: "api/dashboard_links/quicksight",
-    checktype,
+    check,
   };
 
   const handleLoad = () => {
@@ -38,34 +39,34 @@ function QuickSightEmbed() {
     setError(error);
   };
 
-  // useEffect(() => {
-  //     const sendingDashboardName = async () => {
-  //         let response;
-  //         try {
-  //             setIsLoading(true);
-  //             response = await api.quicksight.getEmbeddedURL(request);
-  //             if (response.data.data.status === 200) {
-  //                 setUrl(response.data.data.EmbedUrl);
-  //                 handleLoad();
-  //             } else if (response.data.data.status === 400) {
-  //                 handleLoad();
-  //                 handleError(response.data.data.error.message);
-  //             }
-  //         } catch (error) {
-  //             if (response.data !== 200) {
-  //                 handleError(response.data.message);
-  //                 handleLoad();
-  //             } else {
-  //                 handleError(error.message);
-  //                 toastr.error(
-  //                     'Error',
-  //                     'An error occurred while loading the QuickSight report.',
-  //                 );
-  //             }
-  //         }
-  //     };
-  //     sendingDashboardName();
-  // }, [checktype]);
+  useEffect(() => {
+    const sendingDashboardName = async () => {
+      let response;
+      try {
+        setIsLoading(true);
+        response = await api.quicksight.getEmbeddedURL(request);
+        if (response.data.status === 200) {
+          setUrl(response.data.EmbedUrl);
+          handleLoad();
+        } else if (response.data.status === 400) {
+          handleLoad();
+          handleError(response.data.error.message);
+        }
+      } catch (error) {
+        if (response.data !== 200) {
+          handleError(response.data.message);
+          handleLoad();
+        } else {
+          handleError(error.message);
+          toastr.error(
+            "Error",
+            "An error occurred while loading the QuickSight report."
+          );
+        }
+      }
+    };
+    sendingDashboardName();
+  }, [check]);
   let apps = [];
   useEffect(async () => {
     try {
@@ -99,9 +100,7 @@ function QuickSightEmbed() {
                   <Fab color="primary" aria-label="add">
                     <div
                       onClick={() => {
-                        setUrl(
-                          "https://us-west-2.quicksight.aws.amazon.com/sn/accounts/919490798061/dashboards/bc3e3846-f2f5-49cd-8632-f4fac0f0df19?directory_alias=nv-agilisium"
-                        );
+                        setcheck(item);
                       }}
                       className={
                         item == "Youtube"
