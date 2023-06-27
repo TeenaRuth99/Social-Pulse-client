@@ -93,7 +93,7 @@ export default function CreateUser() {
       if (res.status === 200) {
         toastr.success("Success", "User added successfully");
         setIsloadingbutton(false);
-        navigate("/users");
+        navigate("/user");
       } else {
         toastr.error("Error", res.data.message);
       }
