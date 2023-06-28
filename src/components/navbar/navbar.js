@@ -39,7 +39,10 @@ function Navigationbar() {
                 }}
             >
                 <Container className="ms-3">
-                    <Navbar.Brand className="brand fw-bolder pt-3">
+                    <Navbar.Brand
+            className="brand fw-bolder pt-3 navtitle"
+            onClick={() => navigate("/dashboard")}
+          >
                         <h4>
                             <span className="fw-bolder" id="brandpre">
                                 Social
