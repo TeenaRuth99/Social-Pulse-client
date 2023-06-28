@@ -58,3 +58,6 @@ a {
     margin-right: 10px;
     
 } */
+.navtitle {
+  cursor: pointer;
+}
