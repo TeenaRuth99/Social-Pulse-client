@@ -129,22 +129,20 @@ a {
   font-size: 1.8rem;
   margin-right: 15px !important;
 }
-@media screen and (max-width: 600px) {
-  .acticon {
-    margin-left: -20px;
-    margin-right: 20px;
-  }
-  .txtlbl {
-    font-size: medium;
-  }
-  .iconsize {
-    font-size: 1.5rem;
-  }
-}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .main {
+    display: block;
+    background-color: white !important;
 
-@media screen and (max-width: 1000px) {
+    max-height: 520px;
+    overflow-y: scroll;
+    margin-top: 30px;
+  }
+  .innerdiv {
+    width: auto;
+  }
   .acticon {
-    margin-left: -3px;
-    margin-right: 3px;
+    margin-left: -40px;
+    margin-right: 20px;
   }
 }
