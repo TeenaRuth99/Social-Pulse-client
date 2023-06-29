@@ -214,6 +214,24 @@ export const data = [
             Zoho: '',
         },
     },
+    {
+    id: "competitors",
+    name: "competitors",
+    type: "text",
+    stream: ["Youtube"],
+    header: "credentials",
+    label: "Know Your Competitors (max 3 separated by semicolon)",
+    required: false,
+    placeholder: "https://www.youtube.com/@AgilisiumConsulting",
+    readOnly: false,
+    initial: {
+      Twitter: "",
+      Linkedin: "",
+      Youtube: "",
+      Facebook: "",
+      Zoho: "",
+    },
+  },
 ];
 export const adminmenu = ['Dashboard', 'Config', 'User'];
 export const viewermenu = ['Dashboard'];
