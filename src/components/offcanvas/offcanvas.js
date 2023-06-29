@@ -85,11 +85,16 @@ function RenderOffCanvas({ name, handleClose, show, ...props }) {
               </Col>
             </Row>
           ) : null}
-
-          <Row>
+<Row>
             <Col>
-              <FaSignOutAlt size={"1.4em"} />
-              <AzureLogout></AzureLogout>
+              <div className="menu" onClick={handleClose}>
+                <span className="icon mx-.5">
+                  <FaSignOutAlt size={"1.4em"} />
+                </span>
+                <span className="ict text-sm-start ms-2">
+                  <AzureLogout></AzureLogout>
+                </span>
+              </div>
             </Col>
           </Row>
         </Offcanvas.Body>
