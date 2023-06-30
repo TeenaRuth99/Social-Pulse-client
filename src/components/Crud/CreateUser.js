@@ -199,7 +199,7 @@ export default function CreateUser() {
                                 first_name: response?.data.givenName,
                                 display_name: response?.data.displayName,
                                 last_name: response?.data.surname,
-                                email: response?.data.mail,
+                                email: (response?.data.mail).toLowerCase(),
                               });
                               setEmailVerified(true);
                             }
